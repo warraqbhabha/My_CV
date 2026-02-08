@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Warraq | CV</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button>
+
+    <div class="header slide-in">
+        <img src="C:\Users\Ahmad Shery\OneDrive\Desktop\Semester 8\web programming\HTML AND CSS tutorial\web-cv\profile_pic.jpeg"
+             alt="Profile of Alex Ahmed" 
+             class="profile-pic">
+        
+        <div class="header-content">
+            <h1>Ahmad Warraq </h1>
+            <p class="subtitle">Computer Science Student | AI & Cybersecurity</p>
+        </div>
+    </div>
+
+    <div class="container fade-in">
+
+        <div class="main-column">
+            
+            <div class="card">
+                <h2><i class="fas fa-user"></i> About Me</h2>
+                <p>Computer Science student with a strong focus on Cybersecurity and Artificial Intelligence. Currently developing an AI-powered virtual assistant for automated VM penetration testing as a Final Year Project. Proficient in Python, C++, and full-stack development (React, Django), with a passion for building tools that bridge the gap between offensive security and automation</p>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                <h3>FAST Nuces </h3>
+                <p>Computer Science Student | 2022 - Present</p>
+                <p>CGPA: 3.35/4.0</p>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-briefcase"></i> Experience / Projects</h2>
+                
+                <h3>AI-Powered Penetration Testing Agent</h3>
+                <ul>
+                    <li>Developed an automated agent for network security testing using Python.</li>
+                    <li>Implemented vulnerability scanning scripts to detect weak points.</li>
+                </ul>
+
+                <h3 class="margin-top">E-Commerce Web Application</h3>
+                <ul>
+                    <li>Built a full-stack web app using React and Node.js.</li>
+                    <li>Integrated secure payment gateways and user authentication.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="sidebar-column">
+            
+            <div class="card">
+                <h2><i class="fas fa-code"></i> Skills</h2>
+                <div class="skills-list">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Network Security</span>
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">Data Analysis</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-envelope"></i> Contact</h2>
+                <p><strong>Email:</strong> warraqbhabha@gmail.com </p>
+                <p><strong>Web:</strong> warraqbhabha.com</p>
+                <p><strong>Loc:</strong> Lahore, Pakistan</p>
+                
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Message" rows="3"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            <a href="#" class="btn-download">
+                <i class="fas fa-download"></i> Download CV
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p style="color: white;">&copy; 2024 Alex Ahmed. Built with HTML & CSS.</p>
+    </div>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if(body.classList.contains('dark-mode')){
+                toggleBtn.innerText = "☀️ Light Mode";
+            } else {
+                toggleBtn.innerText = "🌙 Dark Mode";
+            }
+        });
+    </script>
+
+</body>
+</html>
